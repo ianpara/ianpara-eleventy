@@ -97,34 +97,34 @@ function scrollFunction() {
 /*=========================================================================
 Fixing BS Scrollspy
 =========================================================================*/
-function hotfixScrollSpy() {
-    var dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'))
-    let curScroll = getCurrentScroll();
-    dataSpyList.forEach(function (dataSpyEl) {
-        let offsets = bootstrap.ScrollSpy.getInstance(dataSpyEl)['_offsets'];
-        for(let i = 0; i < offsets.length; i++){
-            offsets[i] += curScroll;
-        }
-    })
-}
+// function hotfixScrollSpy() {
+//     var dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'))
+//     let curScroll = getCurrentScroll();
+//     dataSpyList.forEach(function (dataSpyEl) {
+//         let offsets = bootstrap.ScrollSpy.getInstance(dataSpyEl)['_offsets'];
+//         for(let i = 0; i < offsets.length; i++){
+//             offsets[i] += curScroll;
+//         }
+//     })
+// }
 
-function getCurrentScroll() {
-    return window.pageYOffset || document.documentElement.scrollTop;
-}
+// function getCurrentScroll() {
+//     return window.pageYOffset || document.documentElement.scrollTop;
+// }
 
-window.onload = function () {
-    hotfixScrollSpy();
-    window.scrollBy(0, .1);
-}
+// window.onload = function () {
+//     hotfixScrollSpy();
+//     window.scrollBy(0, .1);
+// }
 
-window.addEventListener('resize', function(event) {
-    const dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'));
-    dataSpyList.forEach(function(dataSpyEl) {
-      bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh();
-    });
-    hotfixScrollSpy();
-    window.scrollBy(0, .1);
-}, true);
+// window.addEventListener('resize', function(event) {
+//     const dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'));
+//     dataSpyList.forEach(function(dataSpyEl) {
+//       bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh();
+//     });
+//     hotfixScrollSpy();
+//     window.scrollBy(0, .1);
+// }, true);
 
 /*=========================================================================
 Toggle menu on mobile

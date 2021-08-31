@@ -13,7 +13,7 @@ link:
   github: "github.com/ianpara/blogpad-wp"
   gitAddress: "https://github.com/ianpara/blogpad-wp"
 goal: "Learn about the Wordpress templating system and backend CMS."
-work: "Took a design, developed it into a working HTML/CSS site, then convert that into a Wordpress template."
+work: "Took a design, developed it into a working HTML/CSS site, then converted that into a Wordpress template."
 learned: "Better understood WordPress and how their propitery functions work. Practiced taking designs and developing them into functional websites."
 tools: "HTML, CSS, JavaScript, Bootstrap, PHP, Wordpress"
 ---

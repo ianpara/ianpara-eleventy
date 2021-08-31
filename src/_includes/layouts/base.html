@@ -15,7 +15,14 @@
 <body class="position-relative" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50">
     <div class="container" id="top">
         {% include "partials/site-head.html" %}
-        <main class="main-content slide-animate mb-5" tabindex="-1" id="main-content">{% block content %}{% endblock %}</main>
+        <main class="main-content slide-animate mb-5" tabindex="-1" id="main-content">
+            {% include "partials/about.html" %}
+            {% include "partials/skills.html" %}
+            {% include "partials/experience.html" %}
+            {% include "partials/works.html" %}
+            {% include "partials/works-modals.html" %}
+            {% include "partials/contact.html" %}
+        </main>
     </div>
 
     <!-- Go to top button -->

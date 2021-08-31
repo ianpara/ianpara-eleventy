@@ -1,7 +1,7 @@
 ---
 title: "Ian Paraventi"
 metaDesc: "Ian Paraventi's Portfolio website"
-layout: "layouts/home.html"
+layout: "layouts/base.html"
 intro:
   main: "Hi I'm Ian"
   summary: "A graduate of Oakland University with a Bachelors of Science in Information Technology. I have loved computers since I was a kid, so I decided to make a career out of my passion. I started programming in high school and never looked back. I am always ready to tackle new problems and expand my knowledge."

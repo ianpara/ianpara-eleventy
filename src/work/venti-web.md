@@ -1,7 +1,7 @@
 ---
 name: "venti"
 title: "Venti Web Design & Development"
-summary: "Personal web site with custom CMS backend."
+summary: "My freelance company web site with custom CMS backend."
 displayOrder: 1
 hero:
   image: "/images/work/venti.png"

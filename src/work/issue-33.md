@@ -13,7 +13,7 @@ link:
   github: "github.com/ianpara/eleventy-from-scratch"
   gitAddress: "https://github.com/ianpara/eleventy-from-scratch"
 goal: "Learn how to build with Eleventy to better understand Static Site Generators and JAMStack."
-work: "Using the 'Learn Eleventy From Scratch' course, I build from the ground up a design agency site using Eleventy."
+work: "Using the 'Learn Eleventy From Scratch' course, I built from the ground up a design agency site using Eleventy."
 learned: "Learned to build a fast, lightweight website that’s progressively enhanced and some solid HTML, CSS and accessibility best practices."
 tools: "HTML, CSS, JavaScript, Eleventy, Node, Bootstrap"
 ---
