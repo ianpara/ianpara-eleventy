@@ -1,0 +1,30 @@
+{% set assetHash = global.random() %}
+
+<!DOCTYPE html>
+<html lang="en" color-mode="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    {% include "partials/meta-info.html" %}
+    <link rel="stylesheet" href="/fonts/fonts.css?v={{ assetHash }}" />
+    <link rel="stylesheet" href="/css/style.css?v={{ assetHash }}" type="text/css" />
+</head>
+
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50">
+    <div class="container" id="top">
+        {% include "partials/site-head.html" %}
+        <main class="main-content slide-animate mb-5" tabindex="-1" id="main-content">{% block content %}{% endblock %}</main>
+    </div>
+
+    <!-- Go to top button -->
+    <a href="#top" class="return-to-top scroll"><span class="icon-arrow-up-circle"></span></a>
+
+    <!-- Scripts -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+	<script src="/js/main.js?v={{ assetHash }}"></script>
+</body>
+
+</html>

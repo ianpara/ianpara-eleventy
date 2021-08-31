@@ -1,0 +1,24 @@
+{
+    "items": [
+        {
+            "date": "2020 - Present",
+            "job": "Freelancer",
+            "body": "Web Design and Develepoment Freelancer"
+        },
+        {
+            "date": "2019 - 2020",
+            "job": "Web Developer / Technology Admin Specialist",
+            "body": "Part IT helpdesk and part web developer at Auto Credit Express"
+        },
+        {
+            "date": "2015 - 2020",
+            "job": "Bachelors in Information Technology",
+            "body": "Earned my bachelors of science degree at Oakland University"
+        },
+        {
+            "date": "2016 - 2017",
+            "job": "Information Technology Intern",
+            "body": "Learned the basics of being an IT helpdesk at JVIS, a manufacturing company"
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+// all the Sass code handling the layout, which is the container and grid systems
+
+//Container
+.container {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+@include media-breakpoint-up(lg) {
+  .container {
+    max-width: 970px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+//Main content container
+.main-content {
+  margin-left: 0;
+  width: 100%;
+}
+
+@include media-breakpoint-up(lg) {
+  .main-content {
+    margin-left: auto;
+    width: 675px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .main-content {
+    width: 875px;
+  }
+}
+
+//Sections
+%section {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 8rem 5rem;
+}
+
+.section.purple {
+  @extend %section;
+  @include color-assign(background-color, secondary);
+}
+
+.section.white {
+  @extend %section;
+  @include color-assign(background-color, background);
+}
+
+.section-gap {
+  margin-top: $spacer * 4;
+}
+
+.section-title::after {
+  content: "";
+  @include color-assign(background-color, primary);
+  border-radius: 30px;
+  display: block;
+  height: 0.5rem;
+  margin-top: 1.4rem;
+  width: 3rem;
+}

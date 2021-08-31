@@ -1,0 +1,71 @@
+$colors: (
+  light: (
+    background: #fff,
+    primary: #ff5959,
+    secondary: #6666cc,
+    surface: #f6f7ff,
+    text: #4f4f4f,
+    b-w: #000,
+  ),
+  dark: (
+    background: #404040,
+    primary: #ff5959,
+    secondary: #4747c2,
+    surface: #333,
+    text: #e0e0e0,
+    b-w: #fff,
+  ),
+);
+
+$color-placeholder: "here";
+
+@function compose-color-variable($color-key) {
+  @return "--color-#{$color-key}";
+}
+
+:root[color-mode="light"] {
+  @each $key, $value in map-get($colors, "light") {
+    #{compose-color-variable($key)}: #{$value};
+  }
+}
+
+:root[color-mode="dark"] {
+  @each $key, $value in map-get($colors, "dark") {
+    #{compose-color-variable($key)}: #{$value};
+  }
+}
+
+@function str-replace($string, $search, $replace: "") {
+  $index: str-index($string, $search);
+
+  @if not $index {
+    @return $string;
+  }
+
+  @return str-slice($string, 1, $index - 1) + $replace +
+    str-replace(
+      str-slice($string, $index + str-length($search)),
+      $search,
+      $replace
+    );
+}
+
+@function color-get($palette, $color-key) {
+  @return map-get(map-get($colors, $palette), $color-key);
+}
+
+@mixin color-assign($property, $color-key, $template: "") {
+  $fallback: #{color-get("light", $color-key)};
+  $var: var(#{compose-color-variable($color-key)});
+
+  #{$property}: if(
+    str-length($template) == 0,
+    $fallback,
+    #{str-replace($template, $color-placeholder, $fallback)}
+  );
+  #{$property}: if(
+    str-length($template) == 0,
+    $var,
+    #{str-replace($template, $color-placeholder, $var)}
+  );
+}

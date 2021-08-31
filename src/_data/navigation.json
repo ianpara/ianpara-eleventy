@@ -1,0 +1,29 @@
+{
+    "items": [
+        {
+            "text": "About",
+            "url": "#about",
+            "icon": "icon-user"
+        },
+        {
+            "text": "Skills",
+            "url": "#skills",
+            "icon": "icon-bulb"
+        },
+        {
+            "text": "Experience",
+            "url": "#experience",
+            "icon": "icon-graduation"
+        },
+        {
+            "text": "Works",
+            "url": "#works",
+            "icon": "icon-grid"
+        },
+        {
+            "text": "Contact",
+            "url": "#contact",
+            "icon": "icon-phone"
+        }
+    ]
+}

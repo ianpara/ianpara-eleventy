@@ -1,0 +1,36 @@
+{
+    "items": [
+        {
+            "main": "Web",
+            "skills": [
+                "JavaScript",
+                "Wordpress",
+                "Bootstrap"
+            ]
+        },
+        {
+            "main": "Database",
+            "skills": [
+                "MySQL",
+                "SQLite"
+            ]
+        },
+        {
+            "main": "Development",
+            "skills": [
+                "PHP",
+                "Sass",
+                "Node",
+                "Git"
+            ]
+        },
+        {
+            "main": "Operating Systems",
+            "skills": [
+                "Windows",
+                "Windows Server",
+                "Linux"
+            ]
+        }
+    ]
+}

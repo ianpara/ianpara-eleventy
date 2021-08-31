@@ -1,0 +1,24 @@
+<article class="section section-shadow white section-gap" id="works">
+    <h2 class="section-title">{{ sectionWorks.title }}</h2>
+    <div class="row mt-5 portfolio-outer">
+
+        {% for item in collections.work %}
+        <!-- portfolio item -->
+        <a href="#0" type="button" class="col-sm-6 col-12 mb-5 text-decoration-none" data-bs-toggle="modal"
+            data-bs-target="#{{ item.data.name }}Modal">
+            <div class="portfolio-item">
+                <span class="plus-icon">+</span>
+                <div class="thumb ratio ratio-4x3">
+                    <img class="img-fluid" src="{{ item.data.hero.image }}"
+                        alt="{{ item.data.hero.imageAlt }}" loading="lazy" />
+                    <div class="mask"></div>
+                </div>
+                <div class="details">
+                    <h4 class="title">{{ item.data.title }}</h4>
+                    <span class="info">{{ item.data.summary }}</span>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</article>

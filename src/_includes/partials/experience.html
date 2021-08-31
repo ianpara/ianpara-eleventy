@@ -1,0 +1,14 @@
+{% set experience = experience %}
+<article class="section section-shadow white section-gap" id="experience">
+    <h2 class="section-title">{{ sectionExperience.title }}</h2>
+    <!-- timeline -->
+    <ul class="timeline list-unstyled mt-5">
+        {% for item in experience.items %}
+        <li>
+            <div class="date">{{ item.date }}</div>
+            <p class="title">{{ item.job }}</p>
+            <p class="body">{{ item.body }}</p>
+        </li>
+        {% endfor %}
+</article>
+

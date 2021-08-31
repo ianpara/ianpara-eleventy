@@ -1,0 +1,28 @@
+{
+  "name": "ianpara-eleventy",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
+    "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "bootstrap": "^5.1.0",
+    "concurrently": "^6.2.1",
+    "get-google-fonts": "^1.2.2",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "html-minifier": "^4.0.0",
+    "popper.js": "^1.16.1",
+    "sass": "^1.38.2",
+    "simple-line-icons": "^2.5.5"
+  }
+}
