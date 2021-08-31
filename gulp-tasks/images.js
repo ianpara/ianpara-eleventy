@@ -6,7 +6,7 @@ const imagemin = require('gulp-imagemin');
 const images = () => {
   // We have specific configs for jpeg and png files to try
   // to really pull down asset sizes
-  return src('./src/images/work/*')
+  return src('./src/images/**/*')
     .pipe(
       imagemin(
         [
