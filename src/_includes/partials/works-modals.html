@@ -13,11 +13,11 @@ aria-hidden="true">
                 <li class="lh-base"><span class="icon-calendar me-3"></span>{{ item.data.date }}</li>
                 {% if item.data.link.url %}
                 <li class="lh-base"><span class="icon-link me-3"></span><a href="{{ item.data.link.href }}"
-                    target="_blank">{{ item.data.link.url }}</a></li>
+                    target="_blank" rel="noopener">{{ item.data.link.url }}</a></li>
                 {% endif %}
                 {% if item.data.link.github %}
                 <li class="lh-base"><span class="icon-folder me-3"></span><a href="{{ item.data.link.gitAddress }}"
-                    target="_blank">{{ item.data.link.github }}</a></li>
+                    target="_blank" rel="noopener">{{ item.data.link.github }}</a></li>
                 {% endif %}
             </ul>
             <div class="modal-body p-0">
