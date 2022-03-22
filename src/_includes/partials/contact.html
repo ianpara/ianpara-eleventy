@@ -1,25 +1,35 @@
 <article class="section section-shadow white section-gap" id="contact" data-bs-offset="100">
-    <h2 class="section-title">Get in touch</h2>
-    <div class="row justify-content-around mt-5">
-        <form name="contact" method="POST" data-netlify="true">
-            <div class="row mb-3">
-                <div class="col-12 col-md-6 ">
-                    <label for="formEmail" class="form-label">Email address:</label>
-                    <input type="email" name="email" class="form-control" id="formEmail" placeholder="name@example.com" required>
-                </div>
-                <div class="col col-12 col-md-6">
-                    <label for="formName" class="form-label">Name:</label>
-                    <input type="text" name="name" class="form-control" id="formName" placeholder="John Doe" required>
-                </div>
-            </div>
-            <div class="mb-4">
-                <label for="formMessage" class="form-label">Message:</label>
-                <textarea class="form-control" name="message" id="formMessage" rows="3" required></textarea>
-            </div>
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary"><span
-                    class="icon-paper-plane"></span>Send</button>
-            </div>
-        </form>
-    </div>
+	<h2 class="section-title">Get in touch</h2>
+	<div class="row justify-content-around mt-5">
+		<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+			<div class="row mb-3">
+				<div class="col-12 col-md-6">
+					<label for="formEmail" class="form-label">Email address:</label>
+					<input
+						type="email"
+						name="email"
+						class="form-control"
+						id="formEmail"
+						placeholder="name@example.com"
+						required
+					/>
+				</div>
+				<div class="col col-12 col-md-6">
+					<label for="formName" class="form-label">Name:</label>
+					<input type="text" name="name" class="form-control" id="formName" placeholder="John Doe" required />
+				</div>
+			</div>
+			<div class="mb-4">
+				<label for="formMessage" class="form-label">Message:</label>
+				<textarea class="form-control" name="message" id="formMessage" rows="3" required></textarea>
+			</div>
+			<div class="col-12">
+				<input type="text" name="bot-field" hidden />
+				<button type="submit" class="btn btn-primary">
+					<span class="icon-paper-plane"></span>
+					Send
+				</button>
+			</div>
+		</form>
+	</div>
 </article>

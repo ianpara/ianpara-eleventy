@@ -3,9 +3,10 @@
         {
             "main": "Web",
             "skills": [
+                "PHP",
                 "JavaScript",
                 "Wordpress",
-                "Bootstrap"
+                "REST"
             ]
         },
         {
@@ -19,17 +20,17 @@
             "main": "Development",
             "skills": [
                 "PHP",
-                "Sass",
                 "Node",
-                "Git"
+                "Git", 
+                "React"
             ]
         },
         {
-            "main": "Operating Systems",
+            "main": "Styling",
             "skills": [
-                "Windows",
-                "Windows Server",
-                "Linux"
+                "Bootstrap",
+                "Sass/Scss",
+                "TailwindCSS"
             ]
         }
     ]
